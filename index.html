@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Feedback Form</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Student Feedback Form</h1>
+
+<label>Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+
+<label>Student ID</label>
+<input type="text" id="student_id" placeholder="Enter your ID">
+
+<label>Department</label>
+<select id="department">
+<option value="">Select Department</option>
+<option value="Computer Science">Computer Science</option>
+<option value="Business">Business</option>
+<option value="Engineering">Engineering</option>
+<option value="Education">Education</option>
+</select>
+
+<label>Comment</label>
+<textarea id="comment" rows="5" placeholder="Write your feedback"></textarea>
+
+<button onclick="submitForm()">Submit Feedback</button>
+
+<p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
